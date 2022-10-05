@@ -15,7 +15,7 @@
   //__________________________________________________________________________
 
   // 2.
-  function maxOfThree (num1, num2, num3){
+  const maxOfThree = function (num1, num2, num3){
     if (num1 >= num2 && num1 >= num3){
         return num1
     } else if (num2 >= num1 && num2 >= num3){
@@ -24,4 +24,8 @@
         return num3
     }
   }
-  console.log(maxOfThree(9,5,4))
+  console.log(maxOfThree(5,4,3))
+
+//_____________________________________________________________________________
+
+// 3.
