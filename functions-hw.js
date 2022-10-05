@@ -29,14 +29,27 @@
 //_____________________________________________________________________________
 
 // 3.
-function isCharaAVowel (letter) {
-    const vowel = ["a", "e", "i", "o", "u"] 
-    for (let i = 0; i <= vowel.length; i++) {
-        if (letter === vowel[i]){
-            return true
-        }         
-    }
-    return false
+// function isCharaAVowel (letter) {
+//     const vowel = ["a", "e", "i", "o", "u"] 
+//     for (let i = 0; i <= vowel.length; i++) {
+//         if (letter === vowel[i]){
+//             return true
+//         }         
+//     }
+//     return false
+// }
+
+// console.log(isCharaAVowel("f"))
+
+//________________________________________________________________________________
+
+//4.
+const sumArray = function (array) {
+    let num = 0
+    array.forEach(number => {
+        num += number
+    })
+    return num
 }
 
-console.log(isCharaAVowel("f"))
+console.log(sumArray([1, 2, 3, 6]))
