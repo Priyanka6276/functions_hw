@@ -44,12 +44,24 @@
 //________________________________________________________________________________
 
 //4.
-const sumArray = function (array) {
-    let num = 0
-    array.forEach(number => {
-        num += number
-    })
-    return num
-}
+// const sumArray = function (array) {
+//     let num = 0
+//     array.forEach(number => {
+//         num += number
+//     })
+//     return num
+// }
 
-console.log(sumArray([1, 2, 3, 6]))
+// console.log(sumArray([1, 2, 3, 6]))
+
+//________________________________________________________________________________
+
+//5.
+function multiplyArray (array2) {
+    let numOne = 1
+    array2.forEach(number => {
+        numOne *= number
+    })
+    return numOne
+}
+console.log(multiplyArray([2, 2, 3, 6]))
