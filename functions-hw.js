@@ -57,11 +57,20 @@
 //________________________________________________________________________________
 
 //5.
-function multiplyArray (array2) {
-    let numOne = 1
-    array2.forEach(number => {
-        numOne *= number
-    })
-    return numOne
+// function multiplyArray (array2) {
+//     let numOne = 1
+//     array2.forEach(number => {
+//         numOne *= number
+//     })
+//     return numOne
+// }
+// console.log(multiplyArray([2, 2, 3, 6]))
+
+//_________________________________________________________________________________
+
+//6.
+const numArgs = function (arguments) {
+  let arg1 = arguments.length
+  return arg1
 }
-console.log(multiplyArray([2, 2, 3, 6]))
+console.log(numArgs(['r', 4, 'g', 56]))
