@@ -69,8 +69,19 @@
 //_________________________________________________________________________________
 
 //6.
-const numArgs = function (arguments) {
-  let arg1 = arguments.length
-  return arg1
+// const numArgs = function (arguments) {
+//   let arg1 = arguments.length
+//   return arg1
+// }
+// console.log(numArgs(['r', 4, 'g', 56]))
+
+// ____________________________________________________________________________________
+
+//7
+
+function reverseString (word){
+  let str = word.split('').reverse().join('')
+  return str
 }
-console.log(numArgs(['r', 4, 'g', 56]))
+
+console.log(reverseString('Dogs are cute!'))
