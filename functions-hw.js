@@ -89,16 +89,28 @@
 //_____________________________________________________________________________________
 
 //8
-const longestStringArray = function (arr) {
-  let str = ''
-  arr.forEach(word => {
-      if (word.length > str.length) {
-          str = word
-      }
-  })
-  return str.length
-}
-console.log(longestStringArray(['dog', 'wolf', 'parrot']))
+// const longestStringArray = function (arr) {
+//   let str = ''
+//   arr.forEach(word => {
+//       if (word.length > str.length) {
+//           str = word
+//       }
+//   })
+//   return str.length
+// }
+// console.log(longestStringArray(['dog', 'wolf', 'parrot']))
+
+//______________________________________________________________________________
 
 // 9
-// function stringsLongerThan ()
+function stringsLongerThan(arra, num) {
+  const newArra = []
+  for (let i = 0; i < arra.length; i++) {
+    if (arra[i].length > num) {
+      newArra.push(arra[i])
+    }
+  }
+  return newArra
+}
+
+console.log(stringsLongerThan(['live', 'to', 'long', 'and', 'a', 'prosper'], 2))
