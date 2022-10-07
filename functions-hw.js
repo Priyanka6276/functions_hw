@@ -39,7 +39,7 @@
 //     return false
 // }
 
-// console.log(isCharaAVowel("f"))
+// console.log(isCharaAVowel("e"))
 
 //________________________________________________________________________________
 
@@ -79,9 +79,26 @@
 
 //7
 
-function reverseString (word){
-  let str = word.split('').reverse().join('')
-  return str
-}
+// function reverseString (word){
+//   let str = word.split('').reverse().join('')
+//   return str
+// }
 
-console.log(reverseString('Dogs are cute!'))
+// console.log(reverseString('Dogs are cute!'))
+
+//_____________________________________________________________________________________
+
+//8
+const longestStringArray = function (arr) {
+  let str = ''
+  arr.forEach(word => {
+      if (word.length > str.length) {
+          str = word
+      }
+  })
+  return str.length
+}
+console.log(longestStringArray(['dog', 'wolf', 'parrot']))
+
+// 9
+// function stringsLongerThan ()
